@@ -1,4 +1,8 @@
 import fountainsImg from '../assets/images/categories/fountains.png'
+import sparkleFallbackImg from '../assets/images/categories/sparklers.png'
+import skyFallbackImg from '../assets/images/categories/rockets.png'
+import energyFallbackImg from '../assets/images/categories/multi-shots.png'
+import celebrationFallbackImg from '../assets/images/categories/fountains.png'
 import twinklingStarImg from '../assets/images/categories/image_20260924_102021.webp'
 import sparklersImg from '../assets/images/categories/image_20260924_102021_1.webp'
 import newArrivalImg from '../assets/images/categories/image_20260924_102022.webp'
@@ -34,6 +38,10 @@ import multiShotImg from '../assets/images/products/multi-shot.jpg'
 // A category with no `image` is kept here but not shown until artwork is added.
 const allCategories = [
   { id: 'peacock-fountain', image: peacockFountainImg, name: 'PEACOCK FOUNTAIN' },
+    { id: 'sparkle', image: sparkleFallbackImg, name: 'Sparkle' },
+  { id: 'sky', image: skyFallbackImg, name: 'Sky' },
+  { id: 'energy', image: energyFallbackImg, name: 'Energy' },
+  { id: 'celebration', image: celebrationFallbackImg, name: 'Celebration' },
   { id: 'whistling-fountain', image: whistlingFountainImg, name: 'WHISTLING FOUNTAIN' },
   { id: 'children-special', image: childrenSpecialImg, name: 'CHILDREN SPECIAL' },
   { id: 'kids-novelties', image: kidsNoveltiesImg, name: 'Kids & Novelties' },
