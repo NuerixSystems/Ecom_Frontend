@@ -26,7 +26,8 @@ export default function App() {
       <ScrollToTop />
       <Header />
       <BackButton />
-      <main className="flex-1">
+
+      <main className="flex-1 pt-16 md:pt-[72px]">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/shop" element={<Shop />} />
@@ -37,16 +38,31 @@ export default function App() {
           <Route path="/enquiries" element={<Enquiries />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
+
           {/* Auth pages: always available */}
           <Route path="/login" element={<Login />} />
           <Route path="/signup" element={<Signup />} />
-          {/* Account area: switched off unless VITE_LOGIN_ENABLED=true (src/config/features.js) */}
-          <Route path="/account" element={LOGIN_ENABLED ? <Account /> : <LoginDisabledRedirect />} />
-          <Route path="/orders" element={LOGIN_ENABLED ? <Orders /> : <LoginDisabledRedirect />} />
-          <Route path="/orders/:id" element={LOGIN_ENABLED ? <OrderDetail /> : <LoginDisabledRedirect />} />
+
+          {/* Account area */}
+          <Route
+            path="/account"
+            element={LOGIN_ENABLED ? <Account /> : <LoginDisabledRedirect />}
+          />
+
+          <Route
+            path="/orders"
+            element={LOGIN_ENABLED ? <Orders /> : <LoginDisabledRedirect />}
+          />
+
+          <Route
+            path="/orders/:id"
+            element={LOGIN_ENABLED ? <OrderDetail /> : <LoginDisabledRedirect />}
+          />
+
           <Route path="*" element={<NotFound />} />
         </Routes>
       </main>
+
       <Footer />
     </div>
   )

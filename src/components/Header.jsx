@@ -43,8 +43,7 @@ export default function Header() {
     }`
 
   return (
-    <header className="sticky top-0 z-30 border-b border-orange-100 bg-[#FFFAF2]/95 shadow-[0_2px_12px_rgba(11,19,48,0.06)] backdrop-blur">
-      <div className="mx-auto flex h-16 max-w-7xl items-center justify-between gap-2 px-3 sm:gap-4 sm:px-6 md:grid md:h-[72px] md:grid-cols-[1fr_auto_1fr] lg:grid-cols-[auto_auto_minmax(0,1fr)_auto] lg:gap-6 lg:px-8">
+<header className="fixed inset-x-0 top-0 z-50 border-b border-orange-100 bg-[#FFFAF2]/95 shadow-[0_2px_12px_rgba(11,19,48,0.06)] backdrop-blur">      <div className="mx-auto flex h-16 max-w-7xl items-center justify-between gap-2 px-3 sm:gap-4 sm:px-6 md:grid md:h-[72px] md:grid-cols-[1fr_auto_1fr] lg:grid-cols-[auto_auto_minmax(0,1fr)_auto] lg:gap-6 lg:px-8">
         {/* Logo */}
         <Link to="/" className="flex min-w-0 shrink items-center gap-2 sm:shrink-0 sm:gap-2.5" aria-label="Karpaga Crackers home">
           <LogoMark className="h-8 w-8 shrink-0 sm:h-10 sm:w-10" />

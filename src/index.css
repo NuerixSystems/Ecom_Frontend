@@ -5,11 +5,14 @@
 html {
   overflow-x: hidden;
 }
+
 body {
   font-family: 'Inter', sans-serif;
   background: #FFF8EF;
   overflow-x: hidden;
+  margin: 0;
 }
+
 h1, h2, h3, h4, .font-display {
   font-family: 'Poppins', sans-serif;
 }
@@ -27,18 +30,54 @@ h1, h2, h3, h4, .font-display {
 }
 
 /* Shop price filter: two overlapping range inputs forming one dual-handle slider */
+
 .price-slider input[type='range'] {
-  position: absolute; left: 0; top: 0; width: 100%; height: 100%; margin: 0;
-  background: transparent; pointer-events: none; -webkit-appearance: none; appearance: none;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  background: transparent;
+  pointer-events: none;
+  -webkit-appearance: none;
+  appearance: none;
 }
-.price-slider input[type='range']::-webkit-slider-runnable-track { background: transparent; height: 100%; }
-.price-slider input[type='range']::-moz-range-track { background: transparent; }
+
+.price-slider input[type='range']::-webkit-slider-runnable-track {
+  background: transparent;
+  height: 100%;
+}
+
+.price-slider input[type='range']::-moz-range-track {
+  background: transparent;
+}
+
 .price-slider input[type='range']::-webkit-slider-thumb {
-  -webkit-appearance: none; pointer-events: auto; cursor: pointer; height: 18px; width: 18px; border-radius: 9999px;
-  background: #fff; border: 2px solid #E4362B; box-shadow: 0 1px 3px rgba(0,0,0,.3); margin-top: 1px;
+  -webkit-appearance: none;
+  pointer-events: auto;
+  cursor: pointer;
+  height: 18px;
+  width: 18px;
+  border-radius: 9999px;
+  background: #fff;
+  border: 2px solid #E4362B;
+  box-shadow: 0 1px 3px rgba(0,0,0,.3);
+  margin-top: 1px;
 }
+
 .price-slider input[type='range']::-moz-range-thumb {
-  pointer-events: auto; cursor: pointer; height: 14px; width: 14px; border-radius: 9999px;
-  background: #fff; border: 2px solid #E4362B; box-shadow: 0 1px 3px rgba(0,0,0,.3);
+  pointer-events: auto;
+  cursor: pointer;
+  height: 14px;
+  width: 14px;
+  border-radius: 9999px;
+  background: #fff;
+  border: 2px solid #E4362B;
+  box-shadow: 0 1px 3px rgba(0,0,0,.3);
 }
-.price-slider input[type='range']:focus-visible::-webkit-slider-thumb { outline: 2px solid rgba(255,107,26,.6); outline-offset: 2px; }
+
+.price-slider input[type='range']:focus-visible::-webkit-slider-thumb {
+  outline: 2px solid rgba(255,107,26,.6);
+  outline-offset: 2px;
+}
